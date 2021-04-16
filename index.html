@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+
+
+<body>
+  
+  <div class="kontejner1">
+    <h3>Simple, traffic-based pricing</h3>
+    <h4>Sign-up for our 30-day trial. No credit card required.</h4>
+  </div>
+
+  <div class="kontejner2">
+    <div class="preglediICena">
+      <div class="pregledi">
+        <p id="brojPregleda"></p> <p class="pageviews">Pageviews</p>
+      </div>
+      <div class="cena">
+        <p class="znak">$</p><p id="ukupnaCena" class="ukupnaCena"></p> <p>/month</p>
+      </div>
+    </div>
+
+    <div class="slidecontainer">
+      <input type="range" min="1" max="1000000" value="500000" class="slider1" id="myRange">
+    </div>
+
+    <div class="naplata">
+      <p class="mesecno">Monthly Billing</p>
+      <label class="switch">
+        <input id="checkbox" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <p class="godisnje">Yearly Billing <span class="popust">25% discount</span></p>
+    </div>
+
+    <div class="poslednjiDeo">
+      <div class="opis">
+        <div class="check">
+          <img src="file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/1.%20interactive-pricing-component-main/images/icon-check.svg" alt="check" class="cek">
+          <p>Unlimited websites</p>
+        </div>
+        <div class="check">
+          <img src="file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/1.%20interactive-pricing-component-main/images/icon-check.svg" alt="check" class="cek">
+          <p>100% data ownership</p>
+        </div>
+        <div class="check">
+          <img src="file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/1.%20interactive-pricing-component-main/images/icon-check.svg" alt="check" class="cek">
+          <p>Email reports</p>
+        </div>  
+      </div>
+      <div class="dugmeK">
+        <button id="dugme" class="dugme">Start my trial</button>
+      </div>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

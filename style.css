@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: manrope; 
+}
+
+body{
+    background: url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/1.%20interactive-pricing-component-main/images/pattern-circles.svg), url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/1.%20interactive-pricing-component-main/images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 10%, 100%;
+    background-position: 50% 10%, 0% 0%;
+    background-color: hsl(230, 100%, 99%);
+}
+
+.kontejner1{
+    width: 50%;
+    height:25vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+.kontejner1 h4{
+    color: grey;
+}
+
+.kontejner2{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    color: grey;
+    margin-bottom: 7%;
+
+}
+
+.preglediICena{
+    display: flex;
+    margin-top: 7%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: smaller;
+}
+.brojPregleda{
+  width: 2%;
+}
+.pregledi{
+    padding-left: 5%;
+    display: flex;
+    width: 30%;
+}
+.pageviews{
+  margin-left: 2%;
+}
+.cena{
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+}
+.znak{
+  font-size: x-large;
+  font-weight: 900;
+  color:#0f0f0a;
+}
+.ukupnaCena{
+  font-size: x-large;
+  font-weight: 900;
+  color:#0f0f0a;
+}
+
+.naplata{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-size: smaller;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.mesecno{ 
+    margin-right: 5%;
+}
+
+.godisnje{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+}
+.popust{
+    font-size: 80%;
+    color: red;
+    opacity: 50%;
+    font-weight: 800;
+    background-color:#ffb3b3;
+    border-radius: 10px;
+    padding: 1.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.poslednjiDeo{
+    display: flex;
+    width: 100%;
+    border-top: 0.5px solid #e0e0d1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opis{
+    font-size: smaller;
+    width: 40%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.check{
+    display: flex;
+    padding-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    align-items: center;
+}
+.check p {
+    margin-left: 5%;
+}
+
+.dugmeK{
+    width: 30%;
+    margin-right: 1%;
+}
+
+.dugme{
+    background-color:  #00ccff;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border: transparent;
+    border-radius: 15px;
+    color: white;
+    font-size: 80%;
+    cursor: pointer;
+}
+.dugme:focus{
+    outline: none;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 5%;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    width: 42%;            /*to*/
+    left: 8%;              /*to*/
+    bottom: 8%;            /*to*/
+    top: 6%;               /*to*/
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(102%);        /*to*/
+    -ms-transform: translateX(102%);            /*to*/
+    transform: translateX(102%);                /*to*/
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  /*Range slider*/
+  .slidecontainer {
+    width: 90%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider1 {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: linear-gradient(90deg, #00ccff 50%,grey 50%);
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 5px;
+  }
+  
+  /* Mouse-over effects */
+  .slider1:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider1::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    border-radius: 50%;
+    background:  #00ccff; 
+    background-image: url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/1.%20interactive-pricing-component-main/images/icon-slider.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider1::-moz-range-thumb {
+    width: 30px; /* Set a specific slider handle width */
+    height: 30px; /* Slider handle height */
+    background:  #00ccff; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    background-image: url(file:///C:/Users/Lazar/Desktop/Frontend%20mentor/2.%20Junior/1.%20interactive-pricing-component-main/images/icon-slider.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: none;
+  }
+
+@media (max-width:800px){
+  .kontejner1{
+    width: 80%;
+  }
+  .kontejner1 h4{
+    text-align: center;
+  }
+  .kontejner2{
+    width: 80%;
+  }
+  .poslednjiDeo{
+    flex-direction: column;
+  }
+  .opis{
+    width: 90%;
+    margin-top: 10%;
+  }
+  .check{
+    width: 100%;
+    padding-left: 0;
+    margin: auto;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .dugmeK{
+    width: 70%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+  .dugme{
+    margin: auto;
+    height: 5vh;
+    margin-left: 3.5%;
+  }
+  .naplata{
+    width: 90%;
+    margin-left: 4.5%;
+    text-align: center;
+  }
+  .godisnje{
+    position: relative;
+  }
+  .switch{
+    width: 10%;
+    height: 3vh;
+  }
+ 
+  .slidecontainer{
+    width: 90%;
+  }
+  
+}
